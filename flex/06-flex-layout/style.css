@@ -6,14 +6,58 @@ body {
   overflow: hidden;
   font-family: Roboto, sans-serif;
   display: flex;
+  /* flex-direction: row; */
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+
 }
 
 .header {
   display: flex;
-  align-items: start;
-  justify-content: start;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.header ul{
+  display: flex;
+  gap:35px;
+}
+
+.left-links {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.right-links {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+
+ul li {
+  list-style-type: none;
+}
+
+
+
+.footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.footer ul {
+  display: flex;
+  gap:35px;
+  justify-content: space-between;
+}
+
+footer ul li {
+  display: flex;
+  justify-content: space-between;
 }
 
 img {
