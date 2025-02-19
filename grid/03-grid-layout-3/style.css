@@ -5,6 +5,10 @@
 
 .container {
   text-align: center;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows:  0.5fr 0.5fr 2fr 0.5fr;
 }
 
 .container div {
@@ -16,17 +20,51 @@
 }
 
 .header {
+  width: 100vw;
   background-color: #393f4d;
+  grid-area: 1 / 1 / 1 / 3;
+  display: grid;
+  grid-template-columns: 0.5fr  2fr; */
+  gap:30px;
+}
+
+.header.logo {
+  grid-column: 1/3;
+  left:0;
+}
+
+.menu {
+  width: 100%;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.menu ul {
+   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:100px;
+  list-style-type: none;
 }
 
 .menu ul,
 .menu li {
   font-size: 16px;
-}
+} 
 
 .sidebar {
   background-color: #C50208;
+  /*row-start column-start row-end column-end*/
+  /* grid-area: 2 / 1 / 3 / 1;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap:100px */
 }
+
+.sidebar div {
+  /* height: 4rem;
+  width: 8rem; */
+} 
 
 .sidebar .photo {
   background-color: white;
@@ -46,6 +84,8 @@
 
 .nav {
   background-color: #C50208;
+  /* grid-row: 2/4;
+  grid-column: 2/3; */
 }
 
 .nav ul li {
@@ -55,6 +95,8 @@
 
 .article {
   background-color: #bccbde;
+  /* grid-column: 2/2;
+  grid-area: 2/2/3/2; */
 }
 
 .article p {
@@ -68,6 +110,7 @@
   background-color: #FFFFFF;
   color: black;
   text-align: center;
+  /* height: 3rem; */
 }
 
 .card p {
